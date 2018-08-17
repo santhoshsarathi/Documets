@@ -1,0 +1,84 @@
+Has-A Relationship:
+-------------------
+1)Aggregation
+2)Composition
+
+Composition :
+------------- 
+Without exciting container object if the no chance of existing contain objects then container 
+and contain object are strong associated and the the strong association is Composition.
+Ex: University and their Department.
+in Composition container obj holds directly contained object.
+ 
+Aggregation :
+------------
+Without exciting container object if there is chance of existing contain objects then container
+and contain object are weekly associated and the weekly association is Aggregation. 
+Ex:Department and Professor.
+in association container obj holds just reference of contained object.
+
+Has-A  vs Is-A:
+---------------
+1)if u want total functionality of class automatically then if should go far Is-A Relationship.
+2)if u want part of functionality then should for Has-A relationship
+
+----------------------------------------------------------------------------------------------------
+
+Method Signature:
+-----------------
+Method name and argument types only consider as a method signature in Java.
+compiler will use method signature to resolve method calls.
+Ex: public static int m1(int x) ==> m1(int).   (Return type not part MS in Java)
+
+
+Method Overloading
+------------------
+Two method are set to be overloaded if an only if both method same name but different argument is method overloading.
+Ex:abs method (C language is not allow method overloading).
+In overloading method revaluation always takes care by compiler based on reference type. 
+
+1)Automatic promotion in overloading by resolving overloading methods if exact matched method not available then 
+we won't get any compile time error immediately first is promote argument to the next level and check whether the matched method available or not
+if matched method is available then it will consider and if matched method is not available then compile promote argument once again to the next level
+if process will continue until all  promotion still if matched method not available then we get compile time error.
+the following are all possible promotion in overloading:
+char-->int-->long-->float-->double
+byte-->short-->int-->long-->float-->double
+
+while resolve over method compile all ways use prescient for child type argument then compare with parent argument.
+Ex1: m1(String) and m1(Object) now calling m1(null) is will call the string method.
+Ex2: m1(String) and m1(StringBuffer) now calling m1(null) is will get compile time error because string and stringBuffer are same level.(ambiguous) 
+Ex3: m1(int,float) and m1(float,int) now calling m1(10,10) is will get compile time error because both method are valid. (ambiguous) 
+                                     now calling m1(10.5,10.5) is will get compile time error because can't find symbol m1(float,float).
+Ex4: m1(int){"int"} and m1(int...){"var args"} now calling m1() "var args"
+											   now calling m1(10,20) "var args"
+											   now calling m1(10) "int" because int is old version varargs is version.
+	in general varargs  method is will get least priority.the no other method matched then only varargs will get the chance its is exactly same as default case inside switch.
+
+Overriding
+----------
+what ever method parent has by default available to child through inheritance .if child class not satisfy parent class implementation then child is allowed to redefine based
+based on requirement this process called overriding. Parent Method is call as overridden method and child method is call as overriding.
+Rules for overriding:
+1)in overriding method name and argument must be same that is method signature must be same.
+2)In overriding return type must be same but this rule applicable until 1.4 version only .but from 1.5 version onwards we can take co-variant return types.
+  according to this child class method type need not be same as parent class method return type its child type also allowed.
+  co-variant return type concept applicable only for object type not for primitive 
+  parent return type --> child rt  ? Object---->String,SB,... :allowed; Number --- Integer,double.... :allowed ; String ---> Object :not allowed; Integer ---> int :not allowed;
+3) parent class private methods not available to the child and hens overriding concept is not applicable for private methods. 
+   based on requirement we can define exactly same private method in child class is valid but is not overriding. 
+   we cant overriding parent class final methods in child classes. if we try to override we will get compile time error.
+********************************************************************************************************************************************************************************
+*In overriding method resolution always takes by jvm based on runtime object , and overriding is also consider as runtime polymorphism or dynamic polymorphism or late binding.* 
+
+
+
+
+
+
+
+
+
+
+
+
