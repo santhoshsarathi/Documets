@@ -1,3 +1,15 @@
+Java
+------
+In Java every variable and expression has some type. (Java is Strongly Typed).
+Each every data type is clearly defined. every assignment should be checked by compiler for type comparability. 
+Java is not consider as pure object oriented programing language because several oops features not satisfied by ja like operator overloading and multiple inheritance etc
+more over we  depending on primitive data type non objects.
+Main Method:
+public  class Test {
+    final static synchronized strictfp public void main(String... yyyy){
+          System.out.println("Valid Main");
+    }
+}
 Has-A Relationship:
 -------------------
 1)Aggregation
@@ -10,7 +22,7 @@ and contain object are strong associated and the the strong association is Compo
 Ex: University and their Department.
 in Composition container obj holds directly contained object.
  
-Aggregation :
+Aggregation 
 ------------
 Without exciting container object if there is chance of existing contain objects then container
 and contain object are weekly associated and the weekly association is Aggregation. 
@@ -28,7 +40,7 @@ Method Signature:
 -----------------
 Method name and argument types only consider as a method signature in Java.
 compiler will use method signature to resolve method calls.
-Ex: public static int m1(int x) ==> m1(int).   (Return type not part MS in Java)
+Ex: public static int m1(int x) ==> m1(int).(Return type not part MS in Java)
 
 
 Method Overloading
