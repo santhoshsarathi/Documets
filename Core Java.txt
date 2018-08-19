@@ -5,11 +5,84 @@ Each every data type is clearly defined. every assignment should be checked by c
 Java is not consider as pure object oriented programing language because several oops features not satisfied by ja like operator overloading and multiple inheritance etc
 more over we  depending on primitive data type non objects.
 Main Method:
+------------
 public  class Test {
-    final static synchronized strictfp public void main(String... yyyy){
-          System.out.println("Valid Main");
+    final static synchronized strictfp public void main(String... x){
+          System.out.print("Valid Main");
     }
 }
+Checked exceptions and Unchecked exceptions:
+--------------------------------------------
+1)Checked exceptions
+	Exception checked by compiler is Checked exceptions (Ex: FileNotFountException,IOException)
+	must either handle the exception or it must specify the exception using throws keyword.
+1)Unchecked exceptions
+	Unchecked are the exceptions that are not checked at compiled time.(Ex:ArithmeticException ,NullPointerException)
+	so it is not forced by the compiler to either handle or specify the exception.
+
+"== operator" and "equals() method" 
+-----------------------------------
+== operator is reference comparison or address comparison.
+equals() method is content comparison.
+
+Various memory areas in JVM:
+---------------------------
+1)Method Area:
+	Class Data(class level data and static variables)
+2)Heap Area
+	Object Data(all objects and instance variable)
+3)Stack Area:
+	local variable
+	every thread will create one run time stack. each entry in stack called stack frame and the stack frame have three parts a)local variable array b) operand stack c) frame data
+4)PC Register
+	This for to hold address of current execution. 
+5)Native Method Stack
+	Every thread will create one run time stack for hold native method information.
+
+Collection(I) 1.2v (Group of individual object in single entity)
+-------------
+1)List(I)1.2v (Duplicate will allowed and insert order will maintain)
+  a)ArrayList(c)1.2v
+  b)LinkedList(c)1.2v
+  c)Vector(c) (legacy classes)
+     1)Stack(c) (legacy classes)
+2)Set(I)1.2v (Duplicate will not allowed but this not maintain insert order)
+	a)HashSet(c)1.2v
+		1)LinkedHashSet(c)1.4v
+	b)SortedSet(I) 1.2v (Duplicate will not allowed but all object should be inserted according to some sorting order)
+		1)NavigableSet(I)1.6v (,,several methods for navigation process)
+			i)TreeSet(c)
+3)Queue(I)(if u went collection prior to process)1.5v FIFO
+	a)PriorityQueue(c)
+	b)BlockingQueue(c)
+		i)LinkedBlockingQueue(c)
+		ii)PriorityBlockingQueue(c)
+
+Map:(I) if u want group of objects as key value pairs (in map key not allowed duplicate but value can allow duplicate)
+-----
+1)HashMap(c)1.2v
+	a)LinkedHashMap1.4v
+2)WeakHashMap(c)1.2v
+3)IdentityHashMap(c)1.4v
+4)Hashtable(c)<---Dictionary(ac) ( both are legacy classes)
+	a)properties(c) (legacy classes)
+5)SortedMap(I)1.2v(the group of object as key value pairs according to some sorting order of keys)
+	a)NavigableMap(I)1.6v
+		i)TreeMap(c)1.2v (several utility methods for navigation process)
+Sorting:
+--------
+1)Comparable(I) (Default Nature Sorting)
+2)Comparator(I) (Customized Sorting)
+Cursors:
+--------
+1)Enumeration
+2)Iterator
+3)ListIterator
+Utility Classes:
+---------------
+1)Collections
+2)Arrays
+
 Has-A Relationship:
 -------------------
 1)Aggregation
