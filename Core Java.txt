@@ -1,9 +1,11 @@
 Java
 ------
 In Java every variable and expression has some type. (Java is Strongly Typed).
-Each every data type is clearly defined. every assignment should be checked by compiler for type comparability. 
-Java is not consider as pure object oriented programing language because several oops features not satisfied by ja like operator overloading and multiple inheritance etc
-more over we  depending on primitive data type non objects.
+Each every data type is clearly defined. every assignment should be checked 
+by compiler for type comparability. 
+Java is not consider as pure object oriented programing language because 
+several oops features not satisfied by java like operator overloading and 
+multiple inheritance etc. more over we depending on primitive data type non objects.
 Main Method:
 ------------
 public  class Test {
@@ -11,19 +13,18 @@ public  class Test {
           System.out.print("Valid Main");
     }
 }
-Checked exceptions and Unchecked exceptions:
+Checked Exceptions and Unchecked Exceptions:
 --------------------------------------------
 1)Checked exceptions
-	Exception checked by compiler is Checked exceptions (Ex: FileNotFountException,IOException)
-	must either handle the exception or it must specify the exception using throws keyword.
+  Exception checked by compiler is Checked exceptions (Ex: FileNotFountException,IOException)
+  must either handle the exception or it must specify the exception using throws keyword.
 1)Unchecked exceptions
-	Unchecked are the exceptions that are not checked at compiled time.(Ex:ArithmeticException ,NullPointerException)
-	so it is not forced by the compiler to either handle or specify the exception.
-
+  Unchecked are the exceptions that are not checked at compiled time.(Ex:ArithmeticException ,NullPointerException)
+  So it is not forced by the compiler to either handle or specify the exception.
+  
 "== operator" and "equals() method" 
 -----------------------------------
-== operator is reference comparison or address comparison.
-equals() method is content comparison.
+== operator is reference comparison or address comparison. equals() method is content comparison.
 
 Various memory areas in JVM:
 ---------------------------
@@ -33,7 +34,8 @@ Various memory areas in JVM:
 	Object Data(all objects and instance variable)
 3)Stack Area:
 	local variable
-	every thread will create one run time stack. each entry in stack called stack frame and the stack frame have three parts a)local variable array b) operand stack c) frame data
+	every thread will create one run time stack. each entry in stack called stack frame and
+	the stack frame have three parts a)local variable array b) operand stack c) frame data
 4)PC Register
 	This for to hold address of current execution. 
 5)Native Method Stack
