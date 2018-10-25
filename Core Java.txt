@@ -158,7 +158,31 @@ Rules for overriding:
 ********************************************************************************************************************************************************************************
 *In overriding method resolution always takes by jvm based on runtime object , and overriding is also consider as runtime polymorphism or dynamic polymorphism or late binding.* 
 
+1)Java oops
+2)Checked Exceptions and Unchecked Exceptions
+3)"== operator" and "equals() method" 
+4)Various memory areas in JVM
+5)Collection
+6)List vs Set
+7)set syntax and map syntax
+8)Sorting(Comparable,Comparator)
+9)Method Overloading vs Overriding
+10)Hibernate flow 
+11)struts flow
+12)String immutable
 
+
+Hibernate -- get and load
+Array List and Hash map
+oops
+abstraction 
+Hibernate properties
+how will work hibernate and when will create
+custom Exception
+sql vs hsql
+jdbc vs hibernate
+count data type in sql
+mvc flow
 
 
 
