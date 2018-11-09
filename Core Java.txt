@@ -162,6 +162,9 @@ MySQL Function vs Stored Procedure
 1)Function must return a value but in Stored Procedure it is optional. Even a procedure can return zero or n values.
 2)Functions can have only input parameters for it whereas Procedures can have input or output parameters .
 3)Functions can be called from Procedure whereas Procedures cannot be called from a Function.
+4)Procedure allows SELECT as well as DML(INSERT/UPDATE/DELETE) statement in it whereas Function allows only SELECT statement in it.
+5)Exception can be handled by try-catch block in a Procedure whereas try-catch block cannot be used in a Function.
+
 
 1)Java oops
 2)Checked Exceptions and Unchecked Exceptions
