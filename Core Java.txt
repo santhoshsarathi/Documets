@@ -157,6 +157,11 @@ Rules for overriding:
    we cant overriding parent class final methods in child classes. if we try to override we will get compile time error.
 ********************************************************************************************************************************************************************************
 *In overriding method resolution always takes by jvm based on runtime object , and overriding is also consider as runtime polymorphism or dynamic polymorphism or late binding.* 
+MySQL Function vs Stored Procedure
+----------------------------------
+1)Function must return a value but in Stored Procedure it is optional. Even a procedure can return zero or n values.
+2)Functions can have only input parameters for it whereas Procedures can have input or output parameters .
+3)Functions can be called from Procedure whereas Procedures cannot be called from a Function.
 
 1)Java oops
 2)Checked Exceptions and Unchecked Exceptions
