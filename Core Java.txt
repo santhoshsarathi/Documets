@@ -39,7 +39,13 @@ Checked Exceptions and Unchecked Exceptions:
 "== operator" and "equals() method" 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 == operator is reference comparison or address comparison. equals() method is content comparison.
-
+ 
+contract between equals and hascode:
+1)two objects are equal by equals method then their hascodes must be same .
+2)two objects are  not equal by equals method then their hascodes may be same or not.
+3)if hascodes of two objects are equal then we con't conclude any think about .equals method.
+4)if hascodes of two objects are not equal then these objects always not equal by .equals method.
+ 
 Various memory areas in JVM:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1)Method Area:
@@ -187,7 +193,6 @@ Web Services
 		Language and Platform independent: RESTful web services can be written in any programming language and executed in any platform.
 		Can use SOAP: RESTful web services can use SOAP web services as the implementation.
 		Permits different data format: RESTful web service permits different data format such as Plain Text, HTML, XML and JSON
-		
 MySQL Function vs Stored Procedure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1)Function must return a value but in Stored Procedure it is optional. Even a procedure can return zero or n values.
@@ -221,7 +226,6 @@ sql vs hsql
 jdbc vs hibernate
 count data type in sql
 mvc flow
-
 
 netbeans_default_options="~J~client ~J~Xss256m ~J~Xms1g ~J~Xmx2g ~J~Dapple.laf.useScreenMenuBar=true ~J~Dapple.awt.graphics.UseQuartz=true ~J~Dsun.java2d.noddraw=true ~J~Dsun.java2d.dpiaware=true ~J~Dsun.zip.disableMemoryMapping=true"
 ~Xms2g ~Xmx2g ~XX:MetaspaceSize=1g ~XX:MaxMetaspaceSize=1g ~XX:MinHeapFreeRatio=30 ~XX:MaxHeapFreeRatio=70 ~XX:+UseConcMarkSweepGC ~XX:+UseCMSInitiatingOccupancyOnly ~XX:+CMSClassUnloadingEnabled ~Dorg.apache.el.parser.SKIP_IDENTIFIER_CHECK=true
